@@ -1,7 +1,7 @@
 FROM nvidia/cuda:10.1-cudnn7-runtime-ubuntu18.04
 RUN apt-get update && apt-get -y install mc vim htop zsh wget git htop curl python3 python3-pip
 RUN pip3 install --upgrade pip
-RUN pip3 install tensorflow-gpu==2.1.1
+RUN pip3 install tensorflow-gpu
 RUN pip3 install opencv-python keras piexif pandas beautifulsoup4
 RUN pip3 install -U scikit-learn
 RUN pip3 install imageai --upgrade
